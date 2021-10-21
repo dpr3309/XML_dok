@@ -1,3 +1,9 @@
+<details>
+<summary>
+:page_facing_up: Algorithms <sub>[Expand]</sub>
+</summary>
+<p>
+
 > ```cs
 > // supports System.Span<T> and any (non ref struct) int-indexed type
 > IsPalindrome<...>(...);
