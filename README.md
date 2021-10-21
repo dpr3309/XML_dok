@@ -1,12 +1,56 @@
-<head>
-<title>doc</title>
-<style type="text/css">
-body { margin-top: 0; padding-top:0; }
-div#menuForm { overflow: hidden; background-color: #FFFFC6; border: 2px solid yellow; position: fixed; padding: 2px; Z-index: 1000; height: 45px; left: 0; right: 0; }
-div#xmlForm { padding: 10px 10px 0 10px; width: 100%; padding-top: 55px; left: 5px; right: 5px; }
-@media print { div#menuForm { display:none; } div#xmlForm { padding-top: 0; } input#submit { display:none; } }
-</style>
-<style type="text/css">
-.XMLattribute { margin-left: 10px; font-style: italic; }
-</style>
-</head>
+> ```cs
+> // supports System.Span<T> and any (non ref struct) int-indexed type
+> IsPalindrome<...>(...);
+> 
+> // supports System.ReadOnlySpan<T>
+> IsInterleavedRecursive<...>(...);
+> IsInterleavedIterative<...>(...);
+> 
+> IsReorderOf<...>(...); // aka "anagrams"
+> 
+> // supports System.Span<T> and any (non ref struct) int-indexed type
+> SortShuffle<T>(...);
+> SortBubble<T>(...);
+> SortSelection<T>(...);
+> SortInsertion<T>(...);
+> SortQuick<T>(...);
+> SortMerge<T>(...);
+> SortHeap<T>(...);
+> SortOddEven<T>(...);
+> SortCocktail<T>(...);
+> SortComb<T>(...);
+> SortGnome<T>(...);
+> SortShell<T>(...);
+> SortBogo<T>(...);
+> SortSlow<T>(...);
+> SortCycle<T>(...);
+> SortPancake<T>(...);
+> SortStooge<T>(...);
+> SortTim<T>(...);
+> SortCounting<T>(...); // uint-based (non-comparative sort)
+> SortRadix<T>(...); // uint-based (non-comparative sort)
+> SortPidgeonHole<T>(...); // int-based (non-comparative sort)
+> 
+> // supports System.ReadOnlySpan<T> and any (non ref struct) int-indexed type
+> SearchBinary<T>(...);
+> 
+> // supports System.ReadOnlySpan<T> and any (non ref struct) int-indexed type
+> int HammingDistanceIterative<...>(...);
+> int LevenshteinDistanceRecursive<...>(...);
+> int LevenshteinDistanceIterative<...>(...);
+> 
+> // Permutations of sequences
+> // supports System.Span<T> and any (non ref struct) int-indexed type
+> void PermuteRecursive<...>(...);
+> void PermuteIterative<...>(...);
+> 
+> // Combinations of sequences
+> void Combinations<...>(...);
+> 
+> // Path Finding (Graph Search)
+> // overloads for A*, Dijkstra, and Breadth-First-Search algorithms
+> SearchGraph<...>(...);
+> 
+> // Combines ranges without gaps between them
+> IEnumerable<(T A, T B)> CombineRanges<T>(IEnumerable<(T A, T B)> ranges)
+> ```
