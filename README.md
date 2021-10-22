@@ -60,7 +60,7 @@
 > // Combines ranges without gaps between them
 > IEnumerable<(T A, T B)> CombineRanges<T>(IEnumerable<(T A, T B)> ranges)
 > ```
-  
+  </p>
   
   
   <details>
